@@ -1,105 +1,230 @@
-@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
+@import url('https://fonts.googleapis.com/css?family=Heebo');
 
-body {
-  color:#37474f;
-  padding:0;
-  margin:0;
-  margin-bottom:5rem;
-  font-family: 'ZCOOL XiaoWei', serif;
-  font-size: 18px;
-  background:#e2e2f5;
-  line-height: 1.75;
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+*{
+	margin:0;
+	padding:0;
+}
+
+/* ALGUNAS DEFINICIONES GENÉRICAS */
+
+body{
+	font-family: 'Heebo';
+	background:rgba(89,185,149);
+	color:rgba(242,177,29);
+}
+
+h1, h2, h3, h4{
+	font-weight:300;
+	font-family:Heebo;
+}
+
+h1{
+	font-size:3rem;
+	letter-spacing:0.1em;
+	color:rgba(237,107,133);
+	text-align:center;
+}
+
+h2{
+	font-size:1.5rem;
+	letter-spacing:0.1em;
+	color:rgba(242,177,29,0.8);
+	text-align:center;
+	font-family:Ubuntu
+}
+
+h3{
+	font-size:1.5rem;
+	letter-spacing:0.1em;
+	color:rgba(237,107,133,0.9);
+	text-align:center;
+	padding:1rem 0;
 }
 
 a{
-  color:#999;
+	color:rgba(237,107,133,1);
+	text-decoration:none;
 }
 
 a:hover{
-  color:#000;
-  text-decoration: none;
+	color:rgba(237,107,133,1);
+	text-decoration:underline;
 }
 
-:lang(en){
-  font-style: italic;
+/* COMENZAMOS CON LAS PARTES */
+
+#contenido{width:98%; margin:1%;}
+
+
+header{
+	width:98%;
+	top:36%;
+	position: absolute;
+	text-align:center;
+	z-index:9;
+	color:white;
 }
 
-h1,h2{margin:0; padding:0;}
-
-.hidden{
-    display: none;
+video{
+	width:100%;
+	height:auto;
 }
 
-.texto{
-  padding:2rem 6rem 4rem 6rem;
+#somos{
+	width:100%;
+	color: rgba (0,0,0,0.8);
+	background:rgb(255,255,255);
+	margin-bottom:2%;
+	}
+
+.dupla{
+	width:46%;
+	padding:2%;
+	float:left;
+	background-color:red;
+	}
+
+.primera{
+	min-height:300px;
+	text-align:left;
+	background-color:white;
+	background-image:url('media/dupla-01.jpg');
+	background-position:top right;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+}
+.primera h4{padding: 2% 40% 1% 2%;color:rgba(237,107,133)}
+
+.primera h5{padding: 1% 40% 2% 2%; margin-bottom:5em; letter-spacing:0.1em;}
+
+.primera p{padding: 2% 40% 2% 2%;}
+
+.primera address{padding: 2% 40% 2% 2%; font-size:0.9em; font-style:normal;}
+
+.segunda{
+	min-height:300px;
+	text-align:right;
+	background-color:white;
+	background-image:url('media/dupla-02.jpg');
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
 }
 
-#footer {
-    position: fixed;
-    min-height: 5rem;
-    background-color: #b0bec5;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-bottom: 0;
+.segunda h4{padding: 2% 2% 1% 40%;}
+
+.segunda h5{padding: 1% 2% 2% 40%; margin-bottom:5em; letter-spacing:0.1em;}
+
+.segunda p{padding: 2% 2% 2% 40%;}
+
+.segunda address{padding: 2% 2% 2% 40%; font-size:0.9em; font-style:normal;}
+
+#somos hr{
+	clear:both;
+	border:none;
+	}
+
+#portafolio{
+	width:100%;
+	padding-bottom:1%;
+	background:linear-gradient(to bottom, #eee, #aaa);
 }
 
-form{ padding:1.5rem 5.5rem; overflow: hidden}
-
-form input[type="text"]{
-  padding:.3rem;
-  margin:0.5rem;
-  border:none;
-  background:rgba(255,255,255,0.75);
+.item {
+	width:23%;
+	margin:1%;
+	color:#333;
+	background:white;
+	box-shadow:0 0 5px rgba(0,0,0,.5);
 }
 
-form input[type="text"]:nth-child(3){ width:2.5rem;}
-
-
-form input[type="submit"]{
-    display: inline-block;
-    padding: .4rem 1rem;
-    margin-left: 0.5rem;
-    background: #808e95;
-    color: #ffffff;
-    cursor: pointer;
-    text-align: center;
-    border:none;
-    border-radius: 3px;
+.item:hover{
+	cursor:crosshair;
 }
 
-form input[type="submit"]:hover{
-  background:#333;
+.item figure{
+	overflow:hidden;
 }
 
-@media screen and (max-width:800px){
-  .texto{padding:2rem}
-  form{ padding:1.5rem;}
+.item figure img{
+	width:100%;
+	height:auto;
+	margin-bottom:-4px;
+	filter: grayscale(1);
 }
 
-@media screen and (min-width:1250px){
-  .texto{padding:2rem 15rem 4rem 15rem;}
-  form{ padding:1.5rem 14.5rem}
+.item:hover figure img{
+	transform:scale(1);
+	filter: grayscale(0);
+	transition:all ease-out 1s;
 }
 
-pre{
-  overflow-x: auto;
-  background:rgba(255,255,255,0.25);
-  padding:0.5rem;
-  margin:1rem -0.5rem 1.75rem -0.5rem;
+.item h4{
+	font-size:1em;
+	letter-spacing:0.025em;
+	margin:5% 5% 3% 5%;
 }
 
-code{
-  font-family: 'Roboto Mono', monospace;
-  font-size:50%;
-  color:#7b1fa2;
+.item p{
+	font-size:0.875em;
+	letter-spacing:0.05em;
+	margin:2% 5% 6% 5%;
 }
 
-#cierre{
-  background:rgba(255,255,255,0.5);
-  color:#666;
-  padding:0.5rem;
-  margin:5rem -0.5rem 1rem -0.5rem;
-  font-size:50%;
-  letter-spacing: 0.025rem;
+footer{
+	width:100%;
+	padding:3em 0 1em 0;
+	text-align:center;
+	color:rgba(237,107,133);
+}
+
+footer p{
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+	font-size:0.9em;
+	}
+
+/* AJUSTES PARA QUE SE VEA BIEN EN DISTINTOS DISPOSITIVOS */
+
+@media screen and (orientation: portrait){
+
+	.dupla{
+		width:96%;
+		padding:2%;
+		float:left;
+	}
+
+}
+
+@media screen and (max-width: 992px){
+
+	header{top:24%;}
+
+}
+
+@media screen and (max-width: 768px){
+
+	header{top:12%;}
+
+	.item{
+		width:48%;
+		margin:1%;
+		background:#000;
+		color:#FFF;
+	}
+
+}
+
+@media screen and (max-width: 576px){
+
+	header{top:2%;}
+
+	.item{
+		width:96%;
+		margin:2%;
+		background:#000;
+		color:#FFF;
+	}
+
 }
