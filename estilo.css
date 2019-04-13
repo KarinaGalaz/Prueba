@@ -37,7 +37,7 @@ h2{
 h3{
 	font-size:1.5rem;
 	letter-spacing:0.1em;
-	color:rgba(237,107,133,0.9);
+	color:rgba(255,255,255,0.9);
 	text-align:center;
 	padding:1rem 0;
 }
@@ -89,7 +89,7 @@ video{
 	min-height:300px;
 	text-align:left;
 	background-color:white;
-	background-image:url('media/dupla-01.jpg');
+	background-image:url('media/dupla-03.jpg');
 	background-position:top right;
 	background-repeat:no-repeat;
 	background-size:auto 100%;
