@@ -10,7 +10,7 @@ var trabajos = [
     about: "Trabajo para Maggi, marca y packaging",
 }, {
     figure: "media/foto3.jpg",
-    title: "Maqueta espacio compacto",
+    title: "Maqueta espacio reducido",
     about: "Estudio de diseño ideal",
 }, {
     figure: "media/fotos2.jpg",
